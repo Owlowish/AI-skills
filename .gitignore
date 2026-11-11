@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.local-checks/
+.tools/
+projects/
+*.blend
+*.blend[0-9]*
+*.stl
+*.3mf
+*.gcode
+.DS_Store
+Thumbs.db

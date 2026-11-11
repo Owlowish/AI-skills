@@ -1,0 +1,4 @@
+interface:
+  display_name: "3D — Modéliser depuis une référence"
+  short_description: "Modeliser dans Blender avec validations visuelles"
+  default_prompt: "Utilise $3d-reference-to-model pour modeliser cette image dans un nouveau projet nomme fantasy-knight."

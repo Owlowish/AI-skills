@@ -1,0 +1,3 @@
+interface:
+  display_name: "3D — Préparer une impression FDM"
+  short_description: "Préparer échelle, socle, assemblages et STL FDM"

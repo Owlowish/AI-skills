@@ -1,0 +1,3 @@
+interface:
+  display_name: "3D — Mettre un modèle en pose"
+  short_description: "Créer une pose depuis un texte ou une image"
