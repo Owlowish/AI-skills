@@ -7,11 +7,13 @@ description: "Examiner la cohérence d'un modèle Blender avec ses références 
 
 Produire un diagnostic étayé par des images réellement inspectées. Ce skill peut servir avant une retouche ou pour contrôler une correction, sans déclencher de modification géométrique.
 
+Appliquer la [règle sans pilotage de l'écran](../_shared/references/screen-control.md) : tout recours indispensable à une interface pilotée exige un accord explicite préalable dans le chat.
+
 ## Préparer l'examen
 
 Lire AGENTS.md et les règles de [validation visuelle](../3d-reference-to-model/references/visual-validation.md). Vérifier Blender via le [prévol MCP](../3d-reference-to-model/references/blender-mcp.md). Lire project.yaml, analyse, rapports, sources et éventuel manifeste du refpack. Identifier le modèle exact et son état sauvegardé ou non.
 
-Ouvrir l'original et les références pertinentes. Distinguer observations originales, hypothèses du refpack et choix utilisateur. Les six images détaillées/volumes servent de contrôles complémentaires ; leurs contradictions doivent être signalées, pas imposées simultanément au modèle.
+Ouvrir l'original et les références pertinentes. Distinguer observations originales, hypothèses du refpack et choix utilisateur. Les huit images détaillées/volumes, dos inclus, servent de contrôles complémentaires ; leurs contradictions doivent être signalées, pas imposées simultanément au modèle. Signaler les vues manquantes d'un ancien pack sans inventer leur contenu.
 
 Si Blender ou l'inspection effective manque, rendre un diagnostic BLOCKED. Si une référence manque, limiter explicitement la conclusion ; ne pas inventer le profil ou les parties cachées.
 
@@ -29,7 +31,7 @@ Contrôler séparément :
 - **Face** : largeurs, rapports tête/torse/bassin, disposition des membres, symétries voulues et équipement asymétrique.
 - **Profil** : profondeur, épaisseur, porte-à-faux, jonctions, appuis et alignement des articulations.
 - **Trois-quarts** : silhouette globale, raccords, occultations, espaces négatifs et lisibilité de la pose.
-- **Dos** : cohérence des assemblages et surfaces cachées ; sans référence arrière, ne pas conclure à leur fidélité.
+- **Dos** : comparer les références arrière détaillée et simplifiée, les assemblages, les attaches et la finition par rapport aux autres faces. Relever un dos anormalement sommaire sans raison de conception. Sans référence arrière originale, distinguer cohérence du choix synthétique et fidélité à une observation.
 - **Références simplifiées** : conservation des courbures et masses caractéristiques, sans généraliser les formes en boîtes.
 - **Matières/détails** : identité des pièces, nombre et placement des éléments, détails flottants, couleurs et motifs.
 

@@ -13,6 +13,10 @@
 
 La chaîne complète conserve le modèle approuvé, puis les variantes de rig, de pose et de fabrication. Les objets fixes peuvent passer directement à la préparation FDM. Les vues et rapports de chaque étape sont inspectés dans Blender ; aucune validation graphique n'est simulée par les tests.
 
+Les nouveaux refpacks contiennent au moins huit images : face, profil identifié, dos et trois-quarts, en détaillé puis en volumes. Le dos doit être cohérent avec les autres angles et suffisamment défini pour la construction ; ses surfaces inventées restent des hypothèses documentées. Les anciens packs sont préservés avec leur périmètre réel.
+
+Tous les skills suivent la [règle sans pilotage de l'écran](_shared/references/screen-control.md) : outils intégrés, MCP/API/CLI et fichiers par défaut. Un pilotage indispensable demande une explication du blocage et un accord préalable dans le chat. Pour FDM, des STL validés peuvent être livrés en GEOMETRY_PREPARED avec « tranchage non vérifié » si l'inspection du slicer n'est pas disponible sans ce contrôle.
+
 ## Installation Windows avec suivi Git direct
 
 Prérequis : Git, Python 3.12 et Blender avec un serveur MCP accessible lors des tâches 3D. Aucun de ces outils n'est installé par le script de liaison.

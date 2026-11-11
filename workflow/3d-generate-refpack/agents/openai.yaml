@@ -1,3 +1,3 @@
 interface:
   display_name: "3D — Générer un refpack"
-  short_description: "Six références cohérentes : face, profil et trois-quarts"
+  short_description: "Huit références : face, profil, dos et trois-quarts"

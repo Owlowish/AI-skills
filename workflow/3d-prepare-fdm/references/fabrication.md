@@ -27,7 +27,9 @@ Les unités de fabrication peuvent regrouper plusieurs objets Blender ou diviser
 
 ## Slicer
 
-Réimporter les STL finaux avec profil machine et buse exacts. Après tranchage, ouvrir les couches autour des premiers îlots, petits appuis, doigts, antennes, tenons et joints. Vérifier détails disparus, parois, supports internes inaccessibles et marques sur les surfaces visibles.
+Appliquer la [règle sans pilotage de l'écran](../../_shared/references/screen-control.md). Réimporter les STL finaux avec profil machine et buse exacts par une API/CLI appropriée lorsqu'elle existe. Après tranchage, ouvrir les véritables aperçus de couches enregistrés autour des premiers îlots, petits appuis, doigts, antennes, tenons et joints. Vérifier détails disparus, parois, supports internes inaccessibles et marques sur les surfaces visibles. Une simple ouverture de l'application ou un rendu du maillage ne remplace pas ces preuves.
+
+Si une interface pilotée est indispensable pour une vérification demandée, expliquer ce blocage et attendre l'accord explicite dans le chat avant de lancer le contrôle. En l'absence de cet accès autorisé, conserver la livraison géométrique validée en GEOMETRY_PREPARED, avec « tranchage non vérifié ».
 
 Temps et consommation viennent du slicer réellement exécuté. Conserver paramètres, captures et éventuel projet 3MF. Sans inspection du tranchage, le livrable reste GEOMETRY_PREPARED.
 

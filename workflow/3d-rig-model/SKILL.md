@@ -7,6 +7,8 @@ description: Préparer et valider un rig Blender adapté à un modèle 3D exista
 
 Créer une copie articulable du modèle approuvé. Un rig validé prépare la mise en pose ; la création d'une séquence animée et la préparation d'impression sont des tâches distinctes.
 
+Appliquer la [règle sans pilotage de l'écran](../_shared/references/screen-control.md) : tout recours indispensable à une interface pilotée exige un accord explicite préalable dans le chat.
+
 ## Source et prévol
 
 Lire AGENTS.md, le projet et ses rapports. Appliquer le [prévol Blender MCP](../3d-reference-to-model/references/blender-mcp.md) : accès réel, scène, chemin et travail non sauvegardé vérifiés avant toute mutation. Aucun générateur 3D payant ou installation de modèle IA local.

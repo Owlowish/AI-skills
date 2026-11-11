@@ -1,11 +1,13 @@
 ---
 name: 3d-refine-view
-description: "Retoucher un modèle Blender existant depuis une vue ciblée, face, profil ou trois-quarts. Conserver la version précédente, comparer avant/après à caméra fixe et revalider les autres angles et jalons affectés."
+description: "Retoucher un modèle Blender existant depuis une vue ciblée, face, profil, dos ou trois-quarts. Conserver la version précédente, comparer avant/après à caméra fixe et revalider les autres angles et jalons affectés."
 ---
 
 # 3D — Retoucher une vue du modèle
 
 Corriger la géométrie réelle à partir d'un angle choisi, en conservant les acquis du modèle et en contrôlant les autres vues.
+
+Appliquer la [règle sans pilotage de l'écran](../_shared/references/screen-control.md) : tout recours indispensable à une interface pilotée exige un accord explicite préalable dans le chat.
 
 ## Workflow requis
 
@@ -18,6 +20,8 @@ Une installation de skill n'autorise pas une retouche. Pour une demande réelle,
 Lire project.yaml, analyse, rapports et références. Ouvrir réellement les sources originales, les vues du refpack pertinentes et les rendus précédents. Une vue synthétique ne l'emporte pas sur une observation originale.
 
 Identifier vue, côté, pièces, défauts et invariants. Pour face/profil, contrôler largeur ou profondeur ; pour trois-quarts, contrôler raccords et silhouette. Consigner les axes : face -Y, haut +Z dans la convention du projet. Définir la vue par une direction de la cible vers l'œil ; le profil depuis -X n'est pas automatiquement le « profil gauche » anatomique. Déduire le côté des asymétries visibles ou clarifier s'il reste structurant.
+
+Pour le dos, utiliser la référence arrière disponible, contrôler attaches, continuité des flancs et finition des surfaces. Distinguer les détails observés des choix de conception. Revalider le dos après toute correction qui affecte ses raccords ou la répartition des détails.
 
 Adapter la vue ciblée à la référence en tenant compte de sa perspective. Garder les caméras avant/après fixes ; ne pas déplacer la caméra, modifier la lumière ou aplatir le modèle pour faire disparaître un écart. Les paramètres estimés ne constituent pas une calibration exacte.
 

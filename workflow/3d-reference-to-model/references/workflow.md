@@ -6,6 +6,8 @@ Ouvrir réellement chaque image originale. Décrire dans `reports/analysis.md` l
 
 Distinguer ce qui est visible, ce qui est estimé et ce qui reste inconnu. Tenir compte de la perspective, des déformations artistiques et des surfaces occultées. Pour plusieurs images, signaler les contradictions et choisir la vue qui fait autorité dans `authoritative_reference` ; expliquer la décision. Une seule vue trois-quarts peut permettre de commencer avec des hypothèses raisonnables documentées.
 
+Si un refpack accompagne la demande, ouvrir ses quatre angles détaillés et leurs volumes, notamment le dos. Relever dès l'analyse les équipements arrière, raccords, panneaux ou autres détails caractéristiques et leur statut observé/choisi. Un ancien pack sans vue arrière doit être identifié comme tel ; expliciter les choix nécessaires sans prétendre disposer d'une référence absente.
+
 Choisir la stratégie Blender selon les formes : sculpture/remesh, subdivision, courbes, modifiers, booléens, assemblages ou travail direct du maillage. Aucun procédé universel. Au début de la modélisation autorisée seulement, préparer une collection `MODEL` et appliquer les axes : Z vers le haut, face vers -Y. Orienter le sujet une fois, sans changer arbitrairement les axes entre validations. Si la référence impose une autre convention, documenter la conversion. Une demande de préparation seule s'arrête à l'analyse et aux fichiers de projet.
 
 Les références sources sont des copies immuables dont les empreintes sont vérifiées. Ne pas recadrer, repeindre ou remplacer ces fichiers ; conserver les préparations séparément. Créer les répertoires utiles au moment où leur contenu est produit.
@@ -29,6 +31,8 @@ Développer les formes secondaires, sans microdétails. Auditer dans Blender nor
 ## Raffinement — `refinement`
 
 Ajouter progressivement les détails essentiels à l'identité du sujet. Préférer un détail juste et lisible aux ornements masquant de mauvaises masses. Vérifier sa profondeur et sa lecture sous plusieurs angles. Réutiliser des gros plans sources lorsqu'ils existent.
+
+Développer aussi les faces arrière selon leur référence ou les hypothèses retenues : continuité des flancs, attaches, matériaux et niveau de finition. Un dos peu détaillé doit suivre un choix de conception justifié ; l'absence d'image originale ne suffit pas à laisser cette face inachevée. Le contrôle du dos fait partie du passage de ce jalon.
 
 Une image auxiliaire IA n'est justifiée que pour un besoin précis : détail illisible, simplification des masses, finition, hypothèse d'une zone occultée. Avant utilisation : vérifier disponibilité et absence de frais additionnels, puis lire le skill correspondant. Sinon continuer sans génération. Enregistrer dans `references/generated/` avec un fichier voisin décrivant `synthetic: true`, outil, source, intention et incertitudes. Ouvrir l'auxiliaire et l'original, constater leurs cohérences/incohérences, puis consigner l'examen. Aucun multivue généré systématiquement ; ne jamais faire passer une invention pour une surface connue.
 

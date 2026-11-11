@@ -7,6 +7,8 @@ description: Mettre un modèle Blender existant en pose depuis une consigne écr
 
 Produire une attitude lisible et cohérente, sans altérer le maître de sculpture ou le rig source. Ce skill crée des poses ; une séquence animée complète est un besoin distinct.
 
+Appliquer la [règle sans pilotage de l'écran](../_shared/references/screen-control.md) : tout recours indispensable à une interface pilotée exige un accord explicite préalable dans le chat.
+
 ## Source et variante
 
 Lire AGENTS.md, le projet, les rapports et le [contrat des variantes](../_shared/references/derived-workflow.md). Vérifier accès Blender MCP, scène chargée et travail non sauvegardé selon le [prévol](../3d-reference-to-model/references/blender-mcp.md).

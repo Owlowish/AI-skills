@@ -2,6 +2,8 @@
 
 Ces étapes prolongent le workflow de modélisation sans modifier ses quatre jalons ou forcer leurs PASS. Le modèle approuvé, ses sources et ses preuves restent intacts. Ne pas retoucher le modèle pendant une simple installation des skills.
 
+Appliquer la [règle sans pilotage de l'écran](screen-control.md) : MCP/API/CLI et fichiers par défaut, accord préalable dans le chat pour un pilotage indispensable. Une limite d'accès au slicer ne bloque pas les contrôles de géométrie indépendants.
+
 ## Runs et provenance
 
 Depuis la racine de l'espace de travail :

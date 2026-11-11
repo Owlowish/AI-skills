@@ -7,13 +7,15 @@ description: "Préparer un modèle ou une pose Blender validée pour l'impressio
 
 Produire une variante de fabrication et un dossier de STL à la bonne taille. Préserver le maître et les variantes articulées ; les STL contiennent une pose figée.
 
+Appliquer la [règle sans pilotage de l'écran](../_shared/references/screen-control.md) : tout recours indispensable à une interface pilotée exige un accord explicite préalable dans le chat.
+
 ## Prévol et paramètres
 
 Lire AGENTS.md, le [contrat des variantes](../_shared/references/derived-workflow.md), les rapports de la source et le [prévol Blender MCP](../3d-reference-to-model/references/blender-mcp.md). Ouvrir la source et ses vues puis créer un run fdm ; ne pas appliquer les opérations de fabrication au maître.
 
 Pour une A1 mini, lire [a1-mini.md](references/a1-mini.md). Connaître ou faire préciser buse installée, filament, taille cible et priorité qualité/montage. Distinguer une recommandation d'un équipement constaté. Continuer l'audit indépendant pendant l'attente ; ne pas certifier un profil inconnu.
 
-Identifier le slicer disponible et sa version sans installation payante ni démarrage d'impression. Préparer des fichiers n'autorise pas à lancer la machine.
+Identifier le slicer disponible et sa version depuis ses fichiers, API ou CLI documentées, sans installation payante ni démarrage d'impression. Préférer un traitement réellement sans interface. La présence d'un slicer graphique n'autorise ni son lancement pour pilotage ni l'activation d'une fenêtre. Préparer des fichiers n'autorise pas à lancer la machine.
 
 ## Échelle, socle et géométrie
 
@@ -37,7 +39,9 @@ Exporter les pièces retenues en coordonnées correspondant à des millimètres.
 
 Exécuter aussi l'audit STL partagé. Il contrôle géométrie, dimensions et fermeture mais ne remplace pas le slicer.
 
-Si le slicer est accessible, trancher avec le profil retenu et ouvrir l'aperçu des couches : supports, îlots, détails disparus, parois, joints et orientation. Conserver captures et paramètres. Sans cette inspection, livrer GEOMETRY_PREPARED avec « tranchage non vérifié ». SLICER_VERIFIED exige ces preuves ; aucun de ces états ne signifie qu'un tirage physique a été testé.
+Si le slicer fournit une voie API/CLI adaptée, trancher avec le profil retenu puis produire et ouvrir un véritable aperçu des couches enregistrées : supports, îlots, détails disparus, parois, joints et orientation. Conserver les preuves et paramètres ; un rendu du maillage ou un succès de CLI seul ne prouve pas l'inspection des couches.
+
+Si le tranchage ou son inspection exige un pilotage d'écran, ne pas lancer ce contrôle automatiquement. Livrer les STL géométriquement validés en `GEOMETRY_PREPARED`, avec « tranchage non vérifié ». Si une vérification supplémentaire demandée est réellement bloquée et nécessite ce pilotage, expliquer le problème, l'application et les actions requises, demander l'accord dans le chat et l'attendre avant tout appel de contrôle. Continuer les opérations indépendantes possibles. `SLICER_VERIFIED` exige les preuves de couches réellement inspectées ; aucun de ces états ne signifie qu'un tirage physique a été testé.
 
 ## Livraison
 

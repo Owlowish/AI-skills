@@ -1,5 +1,7 @@
 # Accès réel à Blender MCP
 
+Appliquer la [règle sans pilotage de l'écran](../../_shared/references/screen-control.md). Les lectures et rendus via MCP/API sont les voies normales ; un diagnostic de connexion n'autorise pas à prendre le contrôle de l'interface Blender.
+
 ## Découverte et prévol
 
 Inventorier les outils MCP exposés dans la session, puis lire leurs schémas. Ne pas supposer leurs noms : certains serveurs ont `execute_code`/`get_viewport_screenshot`, celui vérifié ici expose `execute_blender_code` et `look`.
@@ -38,3 +40,5 @@ Respecter le mode de sécurité configuré. Le serveur local accepte `bpy`, `bme
 Avant tout chargement d'un projet, identifier la scène courante et préserver le travail non sauvegardé. Ne pas exécuter de reset usine dans la session utilisateur. Les tests d'installation peuvent employer une instance Blender dédiée avec scène usine et sorties isolées ; cela n'autorise pas une modélisation de production. Ne jamais tuer tous les processus Blender pour libérer un port.
 
 Blender doit être ouvert et son addon MCP activé/à l'écoute pour ce serveur local ; il ne démarre pas automatiquement au simple appel du client. Si l'exécutable manque, l'addon n'écoute pas, les versions sont incompatibles ou l'inspection est indisponible, consigner le diagnostic précis et déclarer BLOCKED. Ne pas déclarer un modèle créé après un simple test MCP.
+
+Si rétablir l'accès exige réellement une action dans l'interface, expliquer le blocage et demander l'accord dans le chat avant tout outil de pilotage. Sans accord, rester sur les diagnostics sans interface et les travaux indépendants possibles ; la modélisation dépendante reste BLOCKED.
